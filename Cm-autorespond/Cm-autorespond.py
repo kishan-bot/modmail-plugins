@@ -26,4 +26,3 @@ class ClashMasterAutoReplyHelp(commands.Cog):
                 await message.channel.send(f"You can learn Moderation commands here https://dyno.gg/commands#/Moderator")
 def setup(bot):
     bot.add_cog(ClashMasterAutoReplyHelp(bot))
-Gd
