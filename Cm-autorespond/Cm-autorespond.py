@@ -22,7 +22,7 @@ class ClashMasterAutoReplyHelp(commands.Cog):
             if "clan" in message.content.lower():
                 await message.channel.send(f"if you need clan than u can bla bla")
         if message.channel.id == 711520959361974272:
-            if "moder" in message.content.lower():
+            if "mod" in message.content.lower():
                 await message.channel.send(f"You can learn Moderation commands here https://dyno.gg/commands#/Moderator")
 def setup(bot):
     bot.add_cog(ClashMasterAutoReplyHelp(bot))
