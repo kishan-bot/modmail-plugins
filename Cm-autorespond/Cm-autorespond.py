@@ -27,6 +27,17 @@ class ClashMasterAutoReplyHelp(commands.Cog):
         if message.channel.id == 711520959361974272:
             if "sell" in message.content.lower():
                 await message.delete()
-                await message.channel.send(f"{message.author.mention}! If you are trying to sell coc account than i remind you it's against TOS if send this again you will get banned from server") 
+                await message.channel.send(f"{message.author.mention}! If you are trying to sell coc account than i remind you it's against TOS if you send this again you will get banned from server")
+         if message.channel.id == 711520959361974272:
+            if "buy" in message.content.lower():
+                await message.delete()
+                await message.channel.send(f"{message.author.mention}! If you are trying to buy coc account than i remind you it's against TOS if you send this again you will get banned from server")
+        if message.channel.id == 711520959361974272:
+            if "trade" in message.content.lower():
+                await message.delete()
+                await message.channel.send(f"{message.author.mention}! If you are trying to trade coc account than i remind you it's against TOS if you send this again you will get banned from server")
+       if message.channel.id == 711520959361974272:
+            if "how r you" in message.content.lower():
+                await message.channel.send(f"I am fine {message.author.mention}! How are you? ")
 def setup(bot):
     bot.add_cog(ClashMasterAutoReplyHelp(bot))
