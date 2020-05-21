@@ -35,6 +35,11 @@ class ClashMasterAutoReplyHelp(commands.Cog):
         if message.channel.id == 711520959361974272:
             if "buy" in message.content.lower():
                 await message.delete()
-                await message.channel.send(f"{message.author.mention}! If you are trying to buy coc account than i remind you it's against TOS if you send this again you will get banned from server")      
+                await message.channel.send(f"{message.author.mention}! If you are trying to buy coc account than i remind you it's against TOS if you send this again you will get banned from server")
+        if message.channel.id == 711520959361974272:
+            if "#" not in message.content.lower():
+                await message.delete()
+                await message.channel.send(f"Whats's up {message.author.mention}! /nmay be you forgot to add coc clan tag.")
+                  
 def setup(bot):
     bot.add_cog(ClashMasterAutoReplyHelp(bot))
